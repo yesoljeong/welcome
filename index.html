@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_main</title>
+    <link rel="stylesheet" href="css/homeplus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean');
+
+        .fa{
+            margin-right:10px;
+        }
+        
+        .mainbanner>div{
+            width:1280px;;
+            height:400px;
+            background:url("./image/banner2.jpg")no-repeat;
+            margin:0 auto;
+        }
+
+        .section1,
+        .section3 {
+            width: 1100px;
+            margin: 0px auto;
+        }
+
+        .section1>p {
+            text-align: center;
+            margin: 100px auto 50px auto;
+            font-size: 20px;
+        }
+
+        .article {
+            width: 275px;
+            height: 410px;
+            float: left;
+        }
+
+        .item_1 {
+            width: 255px;
+            height: 320px;
+            background-color: darkgrey;
+            margin: 10px;
+        }
+
+        .text_1 {
+            width: 255px;
+            height: 50px;
+            /*background-color: darkgrey;*/
+            margin: 10px;
+        }
+
+        #section2 {
+            background-color: #F6F6F6;
+            height: 400px;
+            margin: 100px 0px;
+        }
+
+        .section2 {
+            width: 1100px;
+            height: 244px;
+            margin: 0px auto;
+            margin-bottom: 100px;
+            padding: 70px 0px;
+        }
+
+        .today1 {
+            width: 530px;
+            margin: 10px;
+            float: left;
+        }
+
+        .today2 {
+            margin: 10px;
+            width: 530px;
+            float: left;
+        }
+
+        .todaytext1 {
+            width: 200px;
+            height: 224px;
+            float: left;
+            font-size: 24px;
+            color: #f14242;
+        }
+
+        .todaytext2 {
+            width: 200px;
+            height: 224px;
+            float: right;
+            font-size: 24px;
+            color: #f14242;
+            text-align: right;
+        }
+
+        .todayimg1 {
+            width: 330px;
+            height: 224px;
+            background-color: darkgray;
+            float: left;
+        }
+
+        .todayimg2 {
+            width: 330px;
+            height: 224px;
+            background-color: darkgray;
+            float: left;
+        }
+
+        /* 움직이지 않는 이미지 */
+        .big-image {
+            height: 450px;
+            width: 100%;
+            background: url("image/tomato.jpg")no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .big-image div:nth-child(1) {
+            text-align: center;
+            font-size: 70px;
+            padding-top: 150px;
+            color: white;
+            font-weight: 700;
+            font-family: 'Nanum Pen Script';
+        }
+
+        .big-image div:nth-child(2) {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 30px;
+            color: white;
+            font-weight: 700;
+            font-family: 'Nanum Pen Script';
+        }
+
+        #section3>p {
+            text-align: center;
+            margin: 100px auto 50px auto;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .md {
+            width: 1100px;
+            height: 50px;
+            margin: 0px auto;
+        }
+
+        .mdbutton {
+            width: 1100px;
+            margin: 0px auto;
+            box-sizing: border-box;
+        }
+
+        .section3-article {
+            width: 200px;
+            margin: 10px;
+            float: left;
+        }
+
+        .section3-article .md-item {
+            width: 200px;
+            height: 251px;
+        }
+
+        .section3-article .md-item img {
+            width: 200px;
+            height: 251px;
+        }
+
+        .section3-article .md-text {
+            height: 50px;
+            margin: 10px;
+        }
+
+        input {
+            margin: 10px 10px 20px 10px;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            border: solid 0px grey;
+            border-radius: 20px;
+            background-color: #f14242;
+            color: #fff;
+            float: left;
+        }
+
+        input[type="search"] {
+            background-color: #EAEAEA;
+            width: 200px;
+            height: 30px;
+            margin: 0px;
+            color: darkgray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header">
+            <ul class="topmenu">
+                <li><a href="./02_login.html">로그인</a></li>
+                <li><a href="./03_join.html">회원가입</a></li>
+                <li><a href="./06_notice.html">고객센터</a></li>
+                <li><a href="#">배송지역 검색</a></li>
+            </ul>
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <nav class="clearfix">
+                <ul class="nav">
+                    <li><a href="./04_itemlist.html"><i class="fa fa-bars" aria-hidden="true"></i>전체 카테고리</a></li>
+                    <li><a href="./04_itemlist.html">신상품</a></li>
+                    <li><a href="./04_itemlist.html">베스트</a></li>
+                    <li><a href="./04_itemlist.html">알뜰쇼핑</a></li>
+                    <li><a href="./04_itemlist.html">이벤트</a></li>
+                </ul>
+                <input type="search">
+                <a href="./09_cart.html">
+                    <div class="navcart"></div>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAINBANNER -->
+    <div class="mainbanner">
+        <div></div>
+    </div>
+
+    <!-- 추천상품리스트 -->
+    <div class="section1 clearfix">
+        <p>
+            추천 상품 리스트
+        </p>
+        <div class="article" style="align:center">
+            <div class="item_1"><a href="05_itempage.html"><img src="image/01_macaron.jpg"></a></div>
+            <div class="text_1">
+                <p>새콤 달콤한 딸기마카롱</p>
+                <p><b>5,000원</b></p>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/05_bibigo.jpg"></div>
+            <div class="text_1">
+                <p>비비고 군교자</p><b>7,000원</b>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/03_salami.jpg"></div>
+            <div class="text_1">
+                <p>살라미 모듬 </p><b>12,000원</b>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/04_oange.jpg"></div>
+            <div class="text_1">
+                <p>제철 맞은 오렌지</p><b>10,000원</b>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODAY EVENT -->
+    <section id="section2">
+        <div class="section2 clearfix">
+            <div class="today1 clearfix">
+                <div class="todaytext1">
+                    <p><b>TODAY 특가</b></p>
+                    <p style="font-size:16px; color:darkgrey">완전 좋은 제품입니다!</p><br />
+                    <p style="color:#4C4C4C ; font-size:20px">칠레산 생체리<br />4,500원</p>
+                </div>
+                <div class="todayimg1"><img src="image/01_todaybanner.jpg"></div>
+            </div>
+
+            <div class="today2 clearfix">
+                <div class="todayimg2"><img src="image/01_todaybanner.jpg"></div>
+                <div class="todaytext2">
+                    <p><b>TODAY 특가</b></p>
+                    <p style="font-size:16px; color:darkgrey">완전 좋은 제품입니다!</p><br />
+                    <p style="color:#4C4C4C ; font-size:20px">칠레산 생체리<br />4,500원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 움직이지 않는 이미지 -->
+    <section class="big-image">
+        <div>홈플러스는 다릅니다!</div>
+        <div><i class="fa fa-check" aria-hidden="true"></i>신선한 무엇무엇
+            <i class="fa fa-check" aria-hidden="true"></i>산지 직송 시스템
+            <i class="fa fa-check" aria-hidden="true"></i>완전 신선한 채소
+        </div>
+    </section>
+
+    <section id="section3" class="clearfix">
+        <p>MD's C H O I C E</p>
+        <div class="md">
+            <div class="mdbutton">
+                <input type="button" value="채소/과일/견과/쌀">
+                <input type="button" value="수산/해산/건어물">
+                <input type="button" value="정육/계란/면/양념">
+                <input type="button" value="국/반찬/메인요리">
+                <input type="button" value="음료/간식/건강식품">
+            </div>
+        </div>
+        <!-- button 개행 시 4px 간격 생김 >> float로 없애주거나 개행을 없애거나 -4px을 잡아줌 -->
+        <div class="section3 clearfix">
+            <div class="section3-article" style="align:center">
+                <div class="md-item"><img src="image/01_macaron.jpg" alt="macaron"></div>
+                <div class="md-text">상품 텍스트</div>
+            </div>
+            <div class="section3-article" style="align:center">
+                <div class="md-item"><img src="image/01_macaron.jpg" alt="macaron"></div>
+                <div class="md-text">상품 텍스트</div>
+            </div>
+            <div class="section3-article" style="align:center">
+                <div class="md-item"><img src="image/01_macaron.jpg" alt="macaron"></div>
+                <div class="md-text">상품 텍스트</div>
+            </div>
+            <div class="section3-article" style="align:center">
+                <div class="md-item"><img src="image/01_macaron.jpg" alt="macaron"></div>
+                <div class="md-text">상품 텍스트</div>
+            </div>
+            <div class="section3-article" style="align:center">
+                <div class="md-item"><img src="image/01_macaron.jpg" alt="macaron"></div>
+                <div class="md-text">상품 텍스트</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>
+                footer <a href="../mobile/index.html">모바일 버전 보기</a>
+            </p>
+        </div>
+    </footer>
+
+    </div>
+
+
+</body>
+
+</html>
